@@ -1,0 +1,419 @@
+body {
+    background: #fafafc;
+    /* 去除移动端点击高亮 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px -2px black;
+}
+
+.searchbox {
+    max-width: 540px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+
+.searchbox.fixed {
+    background: white;
+}
+
+.searchbox .inpfixed {
+    background: #ebebec;
+}
+
+.searchbox p {
+    position: relative;
+    flex: 1;
+    display: flex;
+    margin-top: 8px;
+    margin-left: 12px;
+}
+
+.searchbox p .searchicon {
+    position: absolute;
+    width: 35px;
+    height: 28px;
+    background: url(../images/home-common.png) no-repeat;
+    background-position: 15px 7px;
+    background-size: 21px 123px;
+    left: 0;
+    top: 0;
+}
+
+.searchbox input {
+    height: 28px;
+    flex: 1;
+    border-radius: 14px;
+    border: none;
+    background: #ffffff;
+    color: #666;
+    padding: 2px 5px;
+    line-height: 24px;
+    box-sizing: border-box;
+    text-indent: 35px;
+}
+
+.searchbox .mine {
+    width: 50px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.searchbox .mine .myicon {
+    width: 22px;
+    height: 22px;
+    background: url(../images/home-common.png) no-repeat;
+    background-position: 1px -35px;
+    background-size: 21px 123px;
+}
+
+.searchbox .mine .myiconfixed {
+    background-position: 1px -77px;
+}
+
+.searchbox .mine span {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.searchbox .mine span.spanfixed {
+    color: #666;
+}
+
+.bannerbox {
+    width: 100%;
+    border-radius: 0 0 40px 40px;
+    overflow: hidden;
+}
+
+.topnav {
+    position: relative;
+    height: 64px;
+    z-index: 10;
+    border-radius: 10px;
+    background: #ffffff;
+    margin: -52px 12px 10px;
+    padding: 4px 0 8px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+}
+
+.topnav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.topnav ul li {
+    height: 52px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topnav ul li .icon {
+    width: 40px;
+    height: 40px;
+    background: url(../images/home-fivemain.png) no-repeat;
+    background-size: 40px;
+}
+
+.topnav ul li:nth-child(1) .icon {
+    background-position: 0px -1px;
+}
+
+.topnav ul li:nth-child(2) .icon {
+    background-position: 0px -41px;
+}
+
+.topnav ul li:nth-child(3) .icon {
+    background-position: 0px -82px;
+}
+
+.topnav ul li:nth-child(4) .icon {
+    background-position: 0px -123px;
+}
+
+.topnav ul li:nth-child(4) .icon {
+    background-position: 0px -164px;
+}
+
+.trip_entry {
+    height: 198px;
+    margin: 0 12px 1px;
+    border-radius: 8px;
+    background: #69d45a;
+    overflow: hidden;
+    color: #fff;
+    font-size: 13x;
+}
+
+.trip_entry .gaid_item {
+    display: flex;
+    height: 66px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.gaidfirst {
+    flex: 31%;
+    border-right: 1px solid #f2f2f2;
+    box-sizing: border-box;
+    background: #fb8650 url(../images/grid-nav-items-hotel.png)no-repeat right bottom;
+    background-size: 73px auto;
+}
+
+.gaidfsecond {
+    flex: 23%;
+    border-right: 1px solid #f2f2f2;
+    background: #fb8650 url(../images/grid-nav-items-minsu.png)no-repeat left bottom;
+}
+
+.gaidfthree {
+    border-right: 1px solid #f2f2f2;
+}
+
+.gaidflast {
+    flex: 46%;
+    background: url(../images/grid-nav-items-hot.png)no-repeat right bottom, linear-gradient(to right, #ffbc49, #ffd252);
+    ;
+    background-size: 100% auto;
+}
+
+.gaidfthree {
+    flex: 23%;
+}
+
+.gaidffour {
+    flex: 23%;
+}
+
+.two {
+    background: linear-gradient(to right, #4b8fed, #53bced);
+}
+
+.three {
+    background: linear-gradient(to right, #34c2aa, #6cd557);
+}
+
+.two .gaidfirst {
+    background: url(../images/grid-nav-items-flight.png)no-repeat right bottom;
+    background-size: 79px auto;
+}
+
+.two .gaidfsecond {
+    background: url(../images/grid-nav-items-train.png)no-repeat left bottom;
+    background-size: 37px auto;
+}
+
+.three .gaidfirst {
+    background: url(../images/grid-nav-items-travel.png)no-repeat right bottom;
+    background-size: 94px auto;
+}
+
+.three .gaidfsecond {
+    background: url(../images/grid-nav-items-dingzhi.png)no-repeat left bottom;
+    background-size: 61px auto;
+}
+
+.gaidfsecond,
+.gaidflast,
+.gaidffour,
+.gaidfthree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gaidfirst {
+    display: flex;
+    align-items: center;
+}
+
+.gaidfirst span {
+    margin-left: 10px;
+}
+
+.subnav_entry {
+    margin: 0 12px 12px;
+    display: flex;
+    background: #fafafc;
+    flex-wrap: wrap;
+}
+
+.subnav_entry li {
+    width: 20%;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subnav_entry li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subnav_entry li .icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(../images/un_ico_subnav.png);
+    background-size: 28px 280px;
+}
+
+.subnav_entry li:nth-child(1) .icon {
+    background-position: 0px 0px;
+}
+
+.subnav_entry li:nth-child(2) .icon {
+    background-position: 0px -28px;
+}
+
+.subnav_entry li:nth-child(3) .icon {
+    background-position: 0px -56px;
+}
+
+.subnav_entry li:nth-child(4) .icon {
+    background-position: 0px -84px;
+}
+
+.subnav_entry li:nth-child(5) .icon {
+    background-position: 0px -112px;
+}
+
+.subnav_entry li:nth-child(6) .icon {
+    background-position: 0px -140px;
+}
+
+.subnav_entry li:nth-child(7) .icon {
+    background-position: 0px -168px;
+}
+
+.subnav_entry li:nth-child(8) .icon {
+    background-position: 0px -196px;
+}
+
+.subnav_entry li:nth-child(9) .icon {
+    background-position: 0px -224px;
+}
+
+.subnav_entry li:nth-child(10) .icon {
+    background-position: 0px -252px;
+}
+
+.hotadtitle {
+    height: 44px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hotadtitle .logo {
+    width: 114px;
+    height: 15px;
+    background: url(../images/un_home_text.png) no-repeat 0 -20px/79px 58px;
+    margin-left: 10px;
+}
+
+.hotadtitle .logo .gg {
+    float: right;
+    margin-left: 5px;
+    width: 36px;
+    height: 15px;
+    background: url(../images/icon-gg.png) no-repeat center/36px auto;
+}
+
+.hotadtitle .more {
+    width: 100px;
+    height: 18px;
+    background: linear-gradient(to right, #ff506a, #ff6ac2);
+    border-radius: 20px;
+    line-height: 18px;
+    text-align: center;
+    font-family: "宋体";
+    color: white;
+    margin-right: 5px;
+    letter-spacing: 0.5px;
+}
+
+.salesbox {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.salesbox .salesimg {
+    flex: 1;
+    background: skyblue;
+}
+
+.salesbox .salesimg:nth-child(1) {
+    margin-right: 2px;
+}
+
+.bottombox {
+    height: 60px;
+    display: flex;
+    background: skyblue;
+}
+
+.bottombox .itembtn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    flex-wrap: wrap;
+}
+
+.bottombox .itembtn a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottombox .itembtn .icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.footer {
+    text-align: center;
+    color: #333;
+    line-height: 30px;
+}
+
+.footer .icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/diqiu.png) no-repeat center /15px 15px;
+    vertical-align: middle;
+}
